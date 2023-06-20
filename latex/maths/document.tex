@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage{mathtools, amssymb, amsthm, geometry}
+
+\begin{document}
+	Solve the following : 
+	\[
+	\int_{x=0}^{\pi/4}cos2x\,\sqrt{4-sin2x}\,dx
+	\]
+	
+	Let $u = sin2x$, then 
+	
+	
+	\[
+	du = 2cos2x\,dx
+	\]
+	
+	\[
+	\frac{du}{2cos2x} = dx
+	\]
+	
+	Substituting the vaule back into the original integral, we get 
+	
+	\[
+		\int_{x=0}^{\pi/4}cos2x\,\sqrt{4-u}\,\frac{du}{2cos2x}
+	\]
+	
+	\[
+	      \frac{1}{2}\int_{x=0}^{\pi/4}\sqrt{4-u}\,{du}
+	\]
+	
+	\[
+	\frac{1}{2}\int_{x=0}^{\pi/4}{(4-u)}^\frac{1}{2}\,{du}
+	\]
+	
+	\[
+	\left[-\frac{1}{2}* \frac{(4-u)^(\frac{1}{2} + 1)} {(\frac{1}{2} + 1)} + C\right]_0^\frac{\pi}{4}
+	\]
+	
+	
+	\[
+	\left[-\frac{1}{2}*\frac{2}{3}{(4-u)^(\frac{3}{2})} + C\right]_0^\frac{\pi}{4}
+	\]
+	
+	\[
+	\left[-\frac{1}{3}{(4-u)^(\frac{3}{2})} + C\right]_0^\frac{\pi}{4}
+	\]
+	
+	Substituting the value for $u$ back into the solution we get
+	
+	\[
+	\left[-\frac{1}{3}{(4-sin2x)^(\frac{3}{2})} + C\right]_0^\frac{\pi}{4}
+	\]
+	
+	\[
+	(-\frac{1}{3}{(4-sin\frac{\pi}{2})^(\frac{3}{2})}) + C - (-\frac{1}{3}{(4-sin0)^(\frac{3}{2})} + C)
+	\]
+	
+	\[
+	(-\frac{1}{3}{(4-1)^(\frac{3}{2})}) + C - (-\frac{1}{3}{(4-0)^(\frac{3}{2})} + C)
+	\]
+	
+	
+	\[
+	(-\frac{1}{3}{(3)^(\frac{3}{2})}) + C - (-\frac{1}{3}{(4)^(\frac{3}{2})} + C)
+	\]
+	
+	\[
+	(-3^(\frac{3}{2} - 1) + C - (-\frac{8}{3} + C)
+	\]
+	
+	\[
+	(-3^(\frac{1}{2}) + C + \frac{8}{3} - C
+	\]
+	
+	\[
+	\frac{8}{3} -\sqrt{3}
+	\]
+	
+	
+\end{document}
